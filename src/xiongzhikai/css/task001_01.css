@@ -1,0 +1,22 @@
+/*CSS*/
+body{
+    margin: 0 auto;
+    padding: 0;}
+
+h1{
+    color: blue;
+}
+h2{
+    font-size: 14px;
+}
+p{
+    background: black;
+    color: yellow;
+    font-size: 12px;
+}
+.strong{
+    color: red;
+}
+img{
+    border: 2px solid red;
+}
