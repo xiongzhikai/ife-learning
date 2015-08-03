@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*第一种方法实现宽度岁浏览器变化而变化*/
+        div{
+
+
+            width: 100%;
+            height: 200px;
+        }
+        .divA1{
+            width: 200px;
+            background: red;
+            float: left;
+        }
+        .divB1{
+            height: 200px;
+            background: blue;
+        }
+        .divC1{
+
+            width: 100%;
+            height: 200px;
+            background: yellow;
+        }
+        .divA2{
+            float: left;
+            width: 200px;
+            background: red;
+        }
+        .divB2{
+            height: 200px;
+            background: blue;
+        }
+        .divC2{
+            clear: both;
+            width: 100%;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>第一种布局
+<div class="div">
+    <div class="divA1"></div>
+    <div class="divB1"></div>
+</div>
+<div class="divC1"></div>
+第二种布局
+<div class="div">
+    <div class="divA2"></div>
+    <div class="divB2"></div>
+    <div class="divC2"></div>
+</div>
+
+
+</body>
+</html>

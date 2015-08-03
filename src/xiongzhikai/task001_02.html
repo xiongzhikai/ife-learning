@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task001_02</title>
+    <style rel="stylesheet" type="text/css">
+        .alignDiv{
+            width: 960px;
+            background: #ffaa76;
+            height: 300px;
+        }
+        /*第一种居中方法*/
+        /*.margin_auto{
+            margin: auto;
+        }*/
+        /*第二种居中方法*/
+        .position_left{
+            position: relative;
+            left: 50%;
+            margin-left: -480px;
+        }
+        .radiusDiv{
+            margin-top: 100px;;
+        }
+        .content{
+            width: 400px;
+            height: 200px;
+            background: black;
+        }
+        .img1{
+            position: relative;
+            top:12px;
+        }
+        .img2{
+            position: relative;
+            left: 376px;
+            top: 11px;
+        }
+        .img3{
+            position: relative;
+            top: -14px;
+        }
+        .img4{
+            position: relative;
+            left: 376px;
+            top:-13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="alignDiv margin_auto position_left"></div>
+<div class="radiusDiv">
+    <img src="img/圆角截取_03.gif " class="img1"/>
+    <img src="img/圆角截取_05.gif " class="img2"/>
+    <div class="content"></div>
+    <img src="img/圆角截取_09.png" class="img3"/>
+    <img src="img/圆角截取_10.gif" class="img4"/>
+</div>
+</body>
+</html>
