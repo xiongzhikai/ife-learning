@@ -1,14 +1,37 @@
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+}
 h1 {
     color: blue;
 }
 h2 {
     font-size: 14px;
 }
-p {
+body > p {
     font-size: 12px;
     color: yellow;
     background-color: black;
 }
 img {
     border: 2px solid red;
+}
+section p:first-child{
+    text-indent: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: right;
+}
+section p:nth-child(2){
+    white-space: pre;
+    color: blue;
+    line-height: 30px;
+    /*font: */
+    font-family: "sans-serif", "Microsoft YaHei";
+    font-size: 12px;
+    font-weight: 400;
+}
+section p:last-child{
+    word-spacing: 10em;
+    font-family: "Bitstream Vera Serif Bold";
 }
