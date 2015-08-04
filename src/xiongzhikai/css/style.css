@@ -11,7 +11,13 @@ a{
     margin-left: 20px;
 }
 .clearfix{
+    content: "";
+    display: none;
+    height: 0;
     clear: both;
+}
+.clearfix{
+    zoom: 1;
 }
 #header_nav a:first-child{
     color: aqua;
@@ -21,11 +27,13 @@ a:hover{
 }
 /*header*/
 header{
-    min-width: 960px;
+    width: 100%;
+    min-width: 980px;
     background: #522a5c;
     height: 80px;
     position: relative;
 }
+
 #logo{
     width: 200px;
     height: 50px;
@@ -46,7 +54,8 @@ header{
 }
 /*banner*/
 #banner{
-    min-width: 960px;
+    width: 100%;
+    min-width: 980px;
     height: 460px;
     background: url("../img/banner-bg.jpg") no-repeat center left;
     position: relative;
@@ -77,22 +86,25 @@ header{
 
 /*content*/
 #content{
-    min-width: 960px;
+    width: 100%;
+    min-width: 980px;
+    text-align: center;
+    margin:0 auto;
 }
 #content_top{
+    width: 100%;
+    min-width: 980px;
     height: 400px;
     background: #eeeeee;
-    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
 }
-#content_top div:first-child{
-    margin-left:280px;
-}
+
 .content_item{
     float: left;
     height: 270px;
     width: 200px;
     margin-top: 10px;
-    margin-left: 60px;
     background: #fff;
     overflow: hidden;
 }
@@ -106,6 +118,7 @@ header{
     line-height: 20px;
 }
 #content_bottom{
+    min-width: 980px;
     clear: both;
     height: 300px;
     text-align: center;
@@ -138,7 +151,8 @@ header{
     background: #000;
     text-align: center;
     overflow: hidden;
-    min-width: 960px;
+    width: 100%;
+    min-width: 980px;
 }
 #footer p:first-child{
     padding-top: 10px;
