@@ -110,34 +110,43 @@ header{
 #content_top{
     width: 100%;
     min-width: 980px;
-    margin: 0 auto;
     text-align: left;
-    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
 }
 .content_top_wrap{
     width: 980px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 100px;
+    background: #ffffff;
+
 }
 .content_item{
     float: left;
-    width: 310px;
-    margin-top: 10px;
-    margin-left: 10px;
-    background: #fff;
-    overflow: hidden;
+    width: 320px;
 }
-
+.content_item_separator{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: #eeeeee;
+}
+.content_item_separator1{
+    left: 320px;
+}
+.content_item_separator2{
+    left: 640px;
+}
 .content_item img{
     width: 290px;
-    padding:5px;
+    padding:15px 15px;
 }
 .content_item p{
     text-indent: 2em;
     font-size: 12px;
     line-height: 170%;
-    padding:15px 20px 30px 25px;
+    margin:15px 20px 30px 25px;
 }
 #content_bottom{
     min-width: 980px;
