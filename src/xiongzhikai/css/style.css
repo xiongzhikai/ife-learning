@@ -32,13 +32,14 @@ header{
     height: 80px;
     position: relative;
 }
-header .wrap{
+.wrap{
     min-width:  980px;
-    height: 80px;
     position: absolute;
-    top:8px;
     left: 50%;
     margin-left: -490px;
+}
+#header .wrap{
+    height: 80px;
 }
 #logo{
     position: absolute;
@@ -49,14 +50,13 @@ header .wrap{
 }
 #header_nav{
     width: 340px;
-    height: 50px;
     position: absolute;
     right: 0px;
-    top: 50px;
+    bottom: 5px;
 }
 #icon{
     position: absolute;
-    right: 20px;
+    right: 10px;
     bottom: 0px;
 }
 /*banner*/
@@ -68,15 +68,21 @@ header .wrap{
     position: relative;
     background-size: 100% 100%;
 }
+#banner .wrap{
+    height: 150px;
+    bottom: 0px;
+}
 #banner_content{
     position: absolute;
     width: 340px;
-    height: 160px;
     overflow: hidden;
-    right: 12%;
-    bottom: 0px;
-    background:rgba(254,254,254,0.2);
-    /*background: linear-gradient(top, rgba(254,254,254,0.7) 0%, rgba(254,254,254,0.5) 50%,rgba(254,254,254,0.3) 100%);*/
+    right: 15px;
+    /*background:rgba(254,254,254,0.2);*/
+    border-radius: 10px;
+    background: linear-gradient(top, rgba(254,254,254,0.7) 0%, rgba(254,254,254,0.5) 50%,rgba(254,254,254,0.3) 100%);
+    background: -moz-linear-gradient(top, rgba(254,254,254,0.7) 0%, rgba(254,254,254,0.5) 50%,rgba(254,254,254,0.3) 100%);
+    background: -o-linear-gradient(top, rgba(254,254,254,0.7) 0%, rgba(254,254,254,0.5) 50%,rgba(254,254,254,0.3) 100%);
+    background: -webkit-linear-gradient(top, rgba(254,254,254,0.5) 0%, rgba(254,254,254,0.3) 50%,rgba(254,254,254,0.1) 100%);
     color: white;
     /*filter: alpha(opacity = 30);*/
     /*-moz-opacity: 0.3;*/
@@ -85,10 +91,12 @@ header .wrap{
 #banner_content h1{
     line-height: 40px;
     text-align: right;
+    font-size: 14px;
 }
 #banner_content p{
-    line-height: 20px;
-    font-size: 14px;
+    line-height: 150%;
+    font-size: 12px;
+    padding: 10px 10px 30px 10px;
 }
 
 /*content*/
@@ -107,13 +115,7 @@ header .wrap{
     text-align: left;
     position: relative;
 }
-#content_top .wrap{
-    position: absolute;
-    width: 980px;
-    height: 400px;
-    left: 50%;
-    margin-left: -490px;
-}
+
 .content_item{
     float: left;
     width: 310px;
@@ -141,15 +143,15 @@ header .wrap{
     position: relative;
 }
 #headProtrit{
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     border-radius: 99px;
     position: absolute;
     top:-50px;
-    left: 47%;
+    left: 43%;
 }
 #content_bottom h1{
-    padding-top: 100px;
+    padding-top: 160px;
     font-size: 20px;
     font-family:Century Gothic;
 }
@@ -182,7 +184,7 @@ header .wrap{
 #footer hr{
     border-color: #666666;
 }
-#footer .wrap{
+#footer_wrap{
     /*position: absolute;*/
     width: 980px;
     height: 200px;
